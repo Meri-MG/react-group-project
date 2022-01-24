@@ -5,15 +5,15 @@ import { BrowserRouter } from 'react-router-dom';
 // import { Provider } from 'react-redux';
 // import store from './redux/configureStore';
 import './index.css';
-import App from './App';
 import Navigation from './components/Navbar';
+import View from './components/View';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <Provider store={store}> */}
     <BrowserRouter>
       <Navigation />
-      <App />
+      <View />
     </BrowserRouter>
     {/* </Provider> */}
   </React.StrictMode>,
