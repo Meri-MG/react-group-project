@@ -17,7 +17,7 @@ export const getMissionFromApi = () => async (dispatch) => {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_MISSIONS:
-      return { ...state, missions: action.payload };
+      return [...action.payload];
     default:
       return state;
   }
