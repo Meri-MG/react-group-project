@@ -1,8 +1,6 @@
 const FETCH_MISSIONS = 'FETCH_MISSIONS';
 const missionUrl = 'https://api.spacexdata.com/v3/missions';
-const initialState = {
-  missions:[],
-};
+const initialState = [];
 
 export const getMission = (payload) => ({
   type: FETCH_MISSIONS,
@@ -20,9 +18,9 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_MISSIONS:
       return { ...state, missions: action.payload };
-      default:
-        return state;
+    default:
+      return state;
   }
 };
 
-export default reducer
+export default reducer;
