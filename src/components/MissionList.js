@@ -1,22 +1,19 @@
 import { useEffect } from 'react';
-import { useSelector, useDispatch } from "react-redux";
-import Missions from "./Mission";
-import { getMissionFromApi } from '../redux/actions/rocket';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { useSelector, useDispatch } from 'react-redux';
+import { getMissionFromApi } from '../redux/missions/missions';
+import Missions from './Mission';
 
 const MissionList = () => {
   const dispatch = useDispatch();
-  const missions = useSelector((state) => state.missionReducer);
-  console.log(missions.missions, 'this me searching');
+  const missions = useSelector((state) => state.missionsReducer);
   useEffect(() => {
     dispatch(getMissionFromApi());
   }, []);
   return (
     <div className="title">
-      {missions.missions.map((mission) => (
-        <Missions
-          key={mission.id}
-          mission={mission}
-        />
+      {missions.map((mission) => (
+        <Missions key={mission.mission_id} mission={mission} />
       ))}
     </div>
   );
