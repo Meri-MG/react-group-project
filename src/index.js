@@ -6,7 +6,6 @@ import { Provider } from 'react-redux';
 import store from './redux/configureStore';
 import './index.css';
 import Navigation from './components/Navbar';
-import View from './components/View';
 import Rockets from './components/Rockets';
 
 ReactDOM.render(
@@ -14,7 +13,6 @@ ReactDOM.render(
     <Provider store={store}>
       <BrowserRouter>
         <Navigation />
-        <View />
         <Routes>
           <Route path="/" element={<Rockets />} />
         </Routes>
