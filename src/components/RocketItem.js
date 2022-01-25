@@ -10,7 +10,7 @@ const RocketItem = (props) => {
       <div>
         <h2>{rocket.data.rocket_name}</h2>
         <p>{rocket.data.description}</p>
-        <ReserveBtn />
+        <ReserveBtn reserve={rocket.data.reserve} id={rocket.data.id} />
       </div>
     </div>
   );

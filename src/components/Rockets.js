@@ -8,17 +8,16 @@ const Rockets = () => {
   const data = useSelector((state) => state.rocketsReducer);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getRocketsFromAPI());
+    if (!data[0]) {
+      dispatch(getRocketsFromAPI());
+    }
   }, []);
   return (
     <div>
       <hr />
       <ul>
         {data.map((rocket) => (
-          <RocketItem
-            key={rocket.id}
-            data={rocket}
-          />
+          <RocketItem key={rocket.id} data={rocket} />
         ))}
       </ul>
     </div>
