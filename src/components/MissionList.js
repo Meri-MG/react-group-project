@@ -8,13 +8,30 @@ const MissionList = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missionsReducer);
   useEffect(() => {
-    dispatch(getMissionFromApi());
+    if (!missions.missions[0]) {
+      dispatch(getMissionFromApi());
+    }
+    if (!missions.missions[0]) {
+      dispatch(getMissionFromApi());
+    }
   }, []);
   return (
-    <div className="title">
-      {missions.map((mission) => (
-        <Missions key={mission.mission_id} mission={mission} />
-      ))}
+    <div className="missions">
+      <table className="miss-table">
+        <thead>
+          <tr>
+            <td className=" col-head">Mission</td>
+            <td className=" col-head">Description</td>
+            <td className=" col-head">Status</td>
+            <td className=" col-head">Join</td>
+          </tr>
+        </thead>
+        <tbody>
+          {missions.map((mission) => (
+            <Missions key={mission.mission_id} mission={mission} />
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };
