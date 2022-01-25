@@ -20,7 +20,7 @@ const Navigation = () => (
             Missions
           </Link>
         </li>
-        <hr className="missions" />
+        <hr className="missions-break" />
         <li>
           <Link className="nav-link" to="/myprofile">
             My Profile
