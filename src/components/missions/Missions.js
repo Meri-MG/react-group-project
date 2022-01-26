@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { createJoin } from '../redux/missions/missions';
+import { createJoin } from '../../redux/missions/missions';
 
 const Missions = (props) => {
   const prop = props;
