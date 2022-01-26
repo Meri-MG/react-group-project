@@ -8,6 +8,7 @@ import Navigation from './components/Navbar';
 import Rockets from './components/Rockets';
 import Dragon from './components/Dragons/Dragon';
 import MissionList from './components/MissionList';
+import MyProfile from './components/MyProfile';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.render(
           <Route path="/" element={<Rockets />} />
           <Route path="/missions" element={<MissionList />} />
           <Route path="/Dragons" element={<Dragon />} />
+          <Route path="/myProfile" element={<MyProfile />} />
         </Routes>
       </BrowserRouter>
     </Provider>
