@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import store from '../../redux/configureStore';
 import classes from './Dragons.module.css';
+import { reserveDragon } from '../../redux/dragons/dragons';
 
 const getDataFromApi = 'getDataFromApi';
 function Dragon() {
@@ -12,6 +13,9 @@ function Dragon() {
       store.dispatch({ type: getDataFromApi });
     }, [],
   );
+  const reserveHandler = (el) => {
+    store.dispatch(reserveDragon(el));
+  };
   return (
     <div>
       <ul className={classes.ul}>
@@ -26,6 +30,7 @@ function Dragon() {
             <span>
               {el.name}
             </span>
+            <span><button onClick={() => reserveHandler(el)} type="button">{el.reserved ? 'Unreserve dragon' : 'Reserve dragon'}</button></span>
           </li>
         ))}
       </ul>
