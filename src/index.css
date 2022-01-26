@@ -10,13 +10,6 @@
   width: 100%;
 }
 
-.logo-wrapper {
-  display: flex;
-  width: 40%;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .inner-nav-bar {
   display: flex;
   width: 80%;
@@ -32,7 +25,7 @@
 }
 
 .nav-link {
-  color: lightskyblue;
+  color: #007bff;
 }
 
 .nav-link:focus {
@@ -51,4 +44,8 @@
   border-radius: 3px;
   padding: 0.1rem;
   margin-right: 0.5rem;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
 }

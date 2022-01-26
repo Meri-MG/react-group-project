@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { getReserved } from '../redux/rockets/rockets';
+import { getReserved } from '../../redux/rockets/rockets';
 
 const ReserveBtn = (props) => {
   const dispatch = useDispatch();

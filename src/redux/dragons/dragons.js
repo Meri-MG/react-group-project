@@ -37,7 +37,7 @@ const reducer = (state = initialState, action) => {
         flag = false;
         return [...action.payload.map((element) => ({
           id: element.id,
-          name: action.payload.name,
+          name: element.name,
           type: element.type,
           flickr_images: element.flickr_images,
           description: element.description,
