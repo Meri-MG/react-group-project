@@ -43,3 +43,12 @@
   width: 1.1rem;
   transform: rotate(90deg);
 }
+
+.reserve-badge {
+  font-size: 0.8rem;
+  background-color: rgb(26, 166, 190);
+  color: #fff;
+  border-radius: 3px;
+  padding: 0.1rem;
+  margin-right: 0.5rem;
+}
