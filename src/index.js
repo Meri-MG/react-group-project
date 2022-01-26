@@ -11,15 +11,17 @@ import Dragon from './components/Dragons/Dragon';
 import MissionList from './components/MissionList';
 
 ReactDOM.render(
-  <Provider store={store}>
-    <BrowserRouter>
-      <Navigation />
-      <Routes>
-        <Route path="/" element={<Rockets />} />
-        <Route path="/missions" element={<MissionList />} />
-        <Route path="/Dragons" element={<Dragon />} />
-      </Routes>
-    </BrowserRouter>
-  </Provider>,
+  <React.StrictMode>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Rockets />} />
+          <Route path="/missions" element={<MissionList />} />
+          <Route path="/Dragons" element={<Dragon />} />
+        </Routes>
+      </BrowserRouter>
+    </Provider>
+  </React.StrictMode>,
   document.getElementById('root'),
 );
