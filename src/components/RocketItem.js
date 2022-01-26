@@ -9,7 +9,10 @@ const RocketItem = (props) => {
       <img src={rocket.data.flickr_images[0]} alt="rocket" />
       <div>
         <h2>{rocket.data.rocket_name}</h2>
-        <p>{rocket.data.description}</p>
+        <p>
+          {rocket.data.reserve && <span className="reserve-badge">Reserved</span>}
+          {rocket.data.description}
+        </p>
         <ReserveBtn reserve={rocket.data.reserve} id={rocket.data.id} />
       </div>
     </div>
