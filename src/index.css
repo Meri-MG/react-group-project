@@ -10,7 +10,6 @@
   width: 100%;
 }
 
-
 .inner-nav-bar,
 .rockets-wrapper {
   display: flex;
@@ -51,7 +50,6 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-
 }
 
 .rockets-wrapper {
