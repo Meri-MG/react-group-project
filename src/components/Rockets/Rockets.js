@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { useDispatch, useSelector } from 'react-redux';
-import { getRocketsFromAPI } from '../redux/rockets/rockets';
+import { getRocketsFromAPI } from '../../redux/rockets/rockets';
 import RocketItem from './RocketItem';
 
 const Rockets = () => {

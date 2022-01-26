@@ -5,10 +5,10 @@ import { Provider } from 'react-redux';
 import store from './redux/configureStore';
 import './index.css';
 import Navigation from './components/Navbar';
-import Rockets from './components/Rockets';
+import Rockets from './components/Rockets/Rockets';
 import Dragon from './components/Dragons/Dragon';
 import MissionList from './components/MissionList';
-import MyProfile from './components/MyProfile';
+import MyProfile from './components/MyProfile/MyProfile';
 
 ReactDOM.render(
   <React.StrictMode>

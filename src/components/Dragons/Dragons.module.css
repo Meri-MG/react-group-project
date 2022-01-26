@@ -1,5 +1,17 @@
+.ul {
+  font-family: 'Poppins', sans-serif;
+}
+
 .ul img {
   width: 20rem;
   height: 14rem;
   margin: 1rem;
+}
+
+.badge {
+  background-color: #0056b4;
+  padding: 0.5rem;
+  margin: 2rem;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
 }

@@ -24,6 +24,7 @@ function Dragon() {
             <span>
               {el.flickr_images.map((img) => <img key={uuidv4()} src={img} alt={el.name} />)}
             </span>
+            {el.reserved ? <span className={classes.badge}>Reserved</span> : ''}
             <span>
               {el.description}
             </span>
