@@ -14,9 +14,23 @@ const ReserveBtn = (props) => {
 
   return (
     <div>
-      <button type="button" onClick={handleReserve}>
-        {reserve ? 'Cancel Reservation' : 'Reserve Rocket'}
-      </button>
+      {!reserve ? (
+        <button
+          className="reservationBtn"
+          type="button"
+          onClick={handleReserve}
+        >
+          Reserve Rocket
+        </button>
+      ) : (
+        <button
+          className="cancelBtn"
+          type="button"
+          onClick={handleReserve}
+        >
+          Cancel Reservation
+        </button>
+      )}
     </div>
   );
 };

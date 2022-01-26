@@ -5,7 +5,7 @@ const RocketItem = (props) => {
   const rocket = props;
 
   return (
-    <div>
+    <div className="rockets-wrapper">
       <img src={rocket.data.flickr_images[0]} alt="rocket" />
       <div>
         <h2>{rocket.data.rocket_name}</h2>
