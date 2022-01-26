@@ -12,6 +12,7 @@ const Rockets = () => {
       dispatch(getRocketsFromAPI());
     }
   }, []);
+
   return (
     <div>
       <hr />
