@@ -1,7 +1,9 @@
 const FETCH_MISSIONS = 'FETCH_MISSIONS';
 const CREATE_JOIN = 'CREATE_JOIN';
 const missionUrl = 'https://api.spacexdata.com/v3/missions';
-const initialState = [];
+const initialState = {
+  missions: [],
+};
 
 export const getMission = (payload) => ({
   type: FETCH_MISSIONS,

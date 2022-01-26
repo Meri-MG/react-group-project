@@ -2,15 +2,12 @@ import { useEffect } from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { useSelector, useDispatch } from 'react-redux';
 import { getMissionFromApi } from '../redux/missions/missions';
-import Missions from './Mission';
+import Missions from './Missions';
 
 const MissionList = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missionsReducer);
   useEffect(() => {
-    if (!missions.missions[0]) {
-      dispatch(getMissionFromApi());
-    }
     if (!missions.missions[0]) {
       dispatch(getMissionFromApi());
     }
@@ -27,7 +24,7 @@ const MissionList = () => {
           </tr>
         </thead>
         <tbody>
-          {missions.map((mission) => (
+          {missions.missions.map((mission) => (
             <Missions key={mission.mission_id} mission={mission} />
           ))}
         </tbody>
