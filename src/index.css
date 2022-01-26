@@ -10,24 +10,11 @@
   width: 100%;
 }
 
-<<<<<<< HEAD
 .inner-nav-bar {
-=======
-.logo-wrapper {
-  display: flex;
-  width: 40%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.inner-nav-bar,
-.rockets-wrapper {
->>>>>>> 368ffe02cbd811636130825ace41fcaab2476f86
   display: flex;
   width: 80%;
   margin: 0 auto;
   justify-content: space-between;
-  align-items: center;
 }
 
 .inner-nav-bar ul {
@@ -38,12 +25,7 @@
 }
 
 .nav-link {
-<<<<<<< HEAD
   color: #007bff;
-=======
-  color: lightskyblue;
-  cursor: pointer;
->>>>>>> 368ffe02cbd811636130825ace41fcaab2476f86
 }
 
 .nav-link:focus {
@@ -64,43 +46,6 @@
   margin-right: 0.5rem;
 }
 
-<<<<<<< HEAD
 body {
   font-family: 'Poppins', sans-serif;
-=======
-.rockets-wrapper {
-  margin-top: 1.5rem;
-}
-
-.rockets-wrapper img {
-  width: 200px;
-  margin: 0 1.5rem 1.5rem 0;
-}
-
-.rockets-wrapper div {
-  align-self: flex-start;
-}
-
-.rockets-wrapper div p {
-  margin: 1rem 0;
-}
-
-.reservationBtn {
-  background-color: rgb(33, 30, 223);
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  padding: 0.4rem 1rem;
-}
-
-.cancelBtn {
-  background-color: #fff;
-  color: grey;
-  box-shadow: 5px 5px 10px 3px #888;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  padding: 0.4rem 1rem;
->>>>>>> 368ffe02cbd811636130825ace41fcaab2476f86
 }
