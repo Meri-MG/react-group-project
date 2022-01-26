@@ -11,7 +11,7 @@ function Dragon() {
   useEffect(
     () => {
       store.dispatch({ type: getDataFromApi });
-    }, [store],
+    }, [],
   );
   const reserveHandler = (el) => {
     store.dispatch(reserveDragon(el));

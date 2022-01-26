@@ -50,7 +50,7 @@ const reducer = (state = initialState, action) => {
         if (dragon.id !== action.payload.id) {
           return dragon;
         }
-        return { ...dragon, reserved: true };
+        return { ...dragon, reserved: !dragon.reserved };
       })];
     default:
       return state;
