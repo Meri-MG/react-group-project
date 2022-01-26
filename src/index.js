@@ -7,6 +7,7 @@ import store from './redux/configureStore';
 import './index.css';
 import Navigation from './components/Navbar';
 import Rockets from './components/Rockets';
+import Dragon from './components/Dragons/Dragon';
 import MissionList from './components/MissionList';
 
 ReactDOM.render(
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Routes>
           <Route path="/" element={<Rockets />} />
           <Route path="/missions" element={<MissionList />} />
+          <Route path="/Dragons" element={<Dragon />} />
         </Routes>
       </BrowserRouter>
     </Provider>
