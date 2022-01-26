@@ -30,7 +30,7 @@ function Dragon() {
             <span>
               {el.name}
             </span>
-            <span><button onClick={() => reserveHandler(el)} type="button">{el.reserved ? 'Unreserve dragon' : 'Reserve dragon'}</button></span>
+            <span><button onClick={() => reserveHandler(el)} type="button">{el.reserved ? 'Cancel reservation' : 'Reserve dragon'}</button></span>
           </li>
         ))}
       </ul>
