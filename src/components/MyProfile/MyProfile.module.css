@@ -1,6 +1,10 @@
+.div {
+  width: 49%;
+}
+
 .div li {
   padding: 2rem;
-  border: solid black;
+  border: solid #e7e7e7;
   border-width: 1px;
 }
 
@@ -10,5 +14,8 @@
 
 .wrapper {
   width: 80%;
+  display: flex;
   margin: 2rem auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
