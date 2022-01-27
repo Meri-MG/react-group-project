@@ -11,7 +11,7 @@ const MyProfile = () => {
   return (
     <div className={classes.wrapper}>
       <div className={classes.div}>
-        <h2>Rockets</h2>
+        <h2>My Rockets</h2>
         <ul>
           {reservedRockets.length ? reservedRockets.map((rocket) => (
             <li key={rocket.id}>{rocket.rocket_name}</li>
@@ -19,7 +19,7 @@ const MyProfile = () => {
         </ul>
       </div>
       <div className={classes.div}>
-        <h2>Dragons</h2>
+        <h2>My Dragons</h2>
         <ul>
           {reservedDragons.length ? reservedDragons.map((dragon) => (
             <li key={dragon.id}>{dragon.name}</li>
