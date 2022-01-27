@@ -25,12 +25,12 @@
   align-items: center;
 }
 
-.nav-link {
+.inner-nav-bar ul li a {
   color: #007bff;
   cursor: pointer;
 }
 
-.nav-link:focus {
+.nav-link {
   text-decoration: underline;
 }
 

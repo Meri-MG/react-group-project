@@ -12,23 +12,35 @@ const Navigation = () => (
       </div>
       <ul>
         <li>
-          <NavLink className="nav-link" to="/">
+          <NavLink
+            className={(navLink) => (navLink.isActive ? 'nav-link' : '')}
+            to="/"
+          >
             Rockets
           </NavLink>
         </li>
         <li>
-          <NavLink className="nav-link" to="/missions">
+          <NavLink
+            className={(navLink) => (navLink.isActive ? 'nav-link' : '')}
+            to="/missions"
+          >
             Missions
           </NavLink>
         </li>
         <li>
-          <NavLink className="nav-link" to="/dragons">
+          <NavLink
+            className={(navLink) => (navLink.isActive ? 'nav-link' : '')}
+            to="/dragons"
+          >
             Dragons
           </NavLink>
         </li>
         <hr className="missions-break" />
         <li>
-          <NavLink className="nav-link" to="/myprofile">
+          <NavLink
+            className={(navLink) => (navLink.isActive ? 'nav-link' : '')}
+            to="/myprofile"
+          >
             My Profile
           </NavLink>
         </li>
