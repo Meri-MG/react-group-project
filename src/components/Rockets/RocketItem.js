@@ -1,8 +1,17 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import ReserveBtn from './ReserveBtn';
+import { getReserved } from '../../redux/rockets/rockets';
 
 const RocketItem = (props) => {
+  const dispatch = useDispatch();
   const rocket = props;
+  const handleReserve = () => {
+    const update = !rocket.data.reserve;
+    const setReserve = () => ({ btnId: rocket.data.id, reserve: update });
+    dispatch(getReserved(setReserve()));
+    console.log('hi button');
+  };
 
   return (
     <div className="rockets-wrapper">
@@ -13,7 +22,11 @@ const RocketItem = (props) => {
           {rocket.data.reserve && <span className="reserve-badge">Reserved</span>}
           {rocket.data.description}
         </p>
-        <ReserveBtn reserve={rocket.data.reserve} id={rocket.data.id} />
+        <ReserveBtn
+          reserve={rocket.data.reserve}
+          id={rocket.data.id}
+          handleReserve={handleReserve}
+        />
       </div>
     </div>
   );
