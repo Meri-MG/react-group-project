@@ -22,17 +22,19 @@ function Dragon() {
       <ul className={classes.ul}>
         {dragons.map((el) => (
           <li key={el.id}>
-            <span>
-              {el.flickr_images.map((img) => <img key={uuidv4()} src={img} alt={el.name} />)}
-            </span>
-            {el.reserved ? <span className={classes.badge}>Reserved</span> : ''}
-            <span>
-              {el.description}
-            </span>
-            <span>
-              {el.name}
+            <span className={classes.alignText}>
+              <img key={uuidv4()} src={el.flickr_images[0]} alt={el.name} />
+              <span>
+                <h2>
+                  {el.name}
+                </h2>
+                <p>
+                  {el.description}
+                </p>
+              </span>
             </span>
             <span><Reserve reserveHandler={() => reserveHandler(el)} content={el.reserved ? 'Cancel reservation' : 'Reserve dragon'} /></span>
+            {el.reserved ? <span className={classes.badge}>Reserved</span> : ''}
           </li>
         ))}
       </ul>
