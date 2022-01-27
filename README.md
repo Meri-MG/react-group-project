@@ -15,7 +15,8 @@
 
 ## Live Demo
 
-> Project live demo on [Netlify]()
+> Project live demo on [Netlify](https://ecstatic-mclean-c55821.netlify.app/
+)
 
 
 # Getting Started
