@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import store from '../../redux/configureStore';
@@ -9,13 +9,11 @@ import { reserveDragon } from '../../redux/dragons/dragons';
 
 const getDataFromApi = 'getDataFromApi';
 function Dragon() {
-  const [reserveStyle, setReserveStyle] = useState(true);
   const dragons = useSelector((state) => state.dragonReducer);
   useEffect(() => {
     store.dispatch({ type: getDataFromApi });
   }, []);
   const reserveHandler = (el) => {
-    setReserveStyle(false);
     store.dispatch(reserveDragon(el));
   };
   return (
@@ -39,8 +37,8 @@ function Dragon() {
 
                 <div>
                   <Reserve
-                    styleing={
-                      reserveStyle ? styles.button : styles.buttonCancel
+                    styling={
+                      el.reserved ? styles.buttonCancel : styles.button
                     }
                     reserveHandler={() => reserveHandler(el)}
                     content={

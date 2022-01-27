@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-function Reserve({ reserveHandler, content, styleing }) {
+function Reserve({ reserveHandler, content, styling }) {
   return (
-    <button className={styleing} onClick={reserveHandler} type="button">
+    <button className={styling} onClick={reserveHandler} type="button">
       {content}
     </button>
   );
@@ -11,6 +11,6 @@ function Reserve({ reserveHandler, content, styleing }) {
 Reserve.propTypes = {
   reserveHandler: PropTypes.func.isRequired,
   content: PropTypes.string.isRequired,
-  styleing: PropTypes.string.isRequired,
+  styling: PropTypes.string.isRequired,
 };
 export default Reserve;

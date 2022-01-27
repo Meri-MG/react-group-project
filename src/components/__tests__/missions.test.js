@@ -13,14 +13,14 @@ describe('Test  Mission section functionality ', () => {
   });
   test('test click ', async () => {
     const handleJoin = jest.fn();
-    const join = { };
+    const join = {};
     render(<MissionBtn handleJoin={handleJoin} join={!join} />);
     await userEvent.click(screen.getByRole('button'));
     expect(handleJoin).toHaveBeenCalled();
   });
   test('test button text ', async () => {
     const handleJoin = jest.fn();
-    const join = { };
+    const join = {};
     render(<MissionBtn handleJoin={handleJoin} join={!join} />);
     await userEvent.click(screen.getByRole('button'));
     expect(screen.getByRole('button').textContent).toEqual('Leave Mission');
