@@ -1,20 +1,13 @@
 .ul {
   font-family: 'Poppins', sans-serif;
+  width: 80%;
+  margin: 1rem auto;
 }
 
 .ul img {
-  width: 20rem;
+  width: 300px;
   height: 14rem;
   margin: 1rem;
-}
-
-.badge {
-  background-color: #0056b4;
-  margin: 1rem;
-  padding: 0.5rem;
-  border: none;
-  color: white;
-  font-family: 'Poppins', sans-serif;
 }
 
 .alignText {
@@ -32,4 +25,15 @@
 .alignText:hover,
 .alignText:active {
   text-decoration: underline;
+}
+
+span.badge {
+  font-size: 0.8rem;
+  background-color: rgb(26, 166, 190);
+  color: #fff;
+  border-radius: 3px;
+  padding: 0.1rem;
+  width: 4rem;
+  margin-right: 0.5rem;
+  display: inline-block;
 }
