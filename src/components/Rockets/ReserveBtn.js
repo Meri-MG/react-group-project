@@ -1,17 +1,8 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
-import { getReserved } from '../../redux/rockets/rockets';
 
 const ReserveBtn = (props) => {
-  const dispatch = useDispatch();
   const rocket = props;
-  const { reserve, id } = rocket;
-  const handleReserve = () => {
-    const update = !reserve;
-    const setReserve = () => ({ btnId: id, reserve: update });
-    dispatch(getReserved(setReserve()));
-  };
-
+  const { reserve, handleReserve } = rocket;
   return (
     <div>
       {!reserve ? (

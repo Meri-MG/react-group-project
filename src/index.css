@@ -14,7 +14,7 @@
 .rockets-wrapper {
   display: flex;
   width: 80%;
-  margin: 0 auto;
+  margin: 0.4rem auto;
   justify-content: space-between;
 }
 
@@ -25,12 +25,12 @@
   align-items: center;
 }
 
-.nav-link {
+.inner-nav-bar ul li a {
   color: #007bff;
   cursor: pointer;
 }
 
-.nav-link:focus {
+.nav-link {
   text-decoration: underline;
 }
 
