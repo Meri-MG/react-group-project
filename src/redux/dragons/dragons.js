@@ -27,7 +27,7 @@ export const reserveDragon = (payload) => (
 
 let flag = true;
 const reducer = (state = initialState, action) => {
-  const ids = state.map((el) => el.id);
+  const ids = state.length ? state.map((el) => el.id) : [];
   switch (action.type) {
     case fetchData:
       if (!action.payload.some((el) => ids.includes(el.id))) {

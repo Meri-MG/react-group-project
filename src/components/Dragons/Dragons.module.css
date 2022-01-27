@@ -10,8 +10,26 @@
 
 .badge {
   background-color: #0056b4;
+  margin: 1rem;
   padding: 0.5rem;
-  margin: 2rem;
-  color: #fff;
+  border: none;
+  color: white;
   font-family: 'Poppins', sans-serif;
+}
+
+.alignText {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.alignText span {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.alignText:hover,
+.alignText:active {
+  text-decoration: underline;
 }
