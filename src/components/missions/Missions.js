@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { createJoin } from '../redux/missions/missions';
+import { createJoin } from '../../redux/missions/missions';
 
 const Missions = (props) => {
   const prop = props;
@@ -19,7 +19,7 @@ const Missions = (props) => {
         <p className={join ? 'member' : 'not-member'}>{join ? 'Active Member' : 'Not a Member'}</p>
       </td>
       <td className="fourth-col">
-        <button onClick={handleJoin} type="button">{join ? 'Leave Mission' : 'Join Mission'}</button>
+        <button onClick={handleJoin} type="button" className={join ? 'join' : 'leave'}>{join ? 'Leave Mission' : 'Join Mission'}</button>
       </td>
     </tr>
   );

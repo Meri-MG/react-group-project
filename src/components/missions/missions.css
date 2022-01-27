@@ -1,0 +1,60 @@
+.miss-table {
+  font-family: 'Merriweather', serif;
+  width: 95%;
+  margin: 2rem auto;
+}
+
+small {
+  background-color: #0290ff;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.first-col {
+  padding: 1rem;
+  text-align: left;
+  font-size: 24px;
+}
+
+.second-col {
+  padding: 2rem 1rem;
+  font-size: 20px;
+  text-align: left;
+  line-height: 2;
+}
+
+.third-col {
+  text-align: center;
+  font-size: 26px;
+}
+
+.member {
+  background-color: rgb(13, 218, 13);
+  border-radius: 10px;
+  padding: 0.5rem;
+  color: white;
+}
+
+.join {
+  border-radius: 10px;
+  padding: 0.5rem 1.4rem;
+  color: rgb(228, 20, 20);
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(221, 17, 17);
+}
+
+.fourth-col {
+  text-align: center;
+  padding: 1rem;
+}
+
+table,
+td,
+tr {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+tr:nth-child(even) {
+  background: rgb(219, 216, 216);
+}

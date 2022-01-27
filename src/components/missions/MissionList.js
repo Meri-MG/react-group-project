@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { useSelector, useDispatch } from 'react-redux';
-import { getMissionFromApi } from '../redux/missions/missions';
+import { getMissionFromApi } from '../../redux/missions/missions';
 import Missions from './Missions';
+import './missions.css';
 
 const MissionList = () => {
   const dispatch = useDispatch();
