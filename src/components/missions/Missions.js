@@ -20,7 +20,7 @@ const Missions = (props) => {
         <p className={join ? 'member' : 'not-member'}>{join ? 'Active Member' : 'Not a Member'}</p>
       </td>
       <td className="fourth-col">
-       <MissionBtn handleJoin={handleJoin} join={join} /> 
+        <MissionBtn handleJoin={handleJoin} join={!join} />
       </td>
     </tr>
   );
