@@ -10,7 +10,6 @@ const RocketItem = (props) => {
     const update = !rocket.data.reserve;
     const setReserve = () => ({ btnId: rocket.data.id, reserve: update });
     dispatch(getReserved(setReserve()));
-    console.log('hi button');
   };
 
   return (

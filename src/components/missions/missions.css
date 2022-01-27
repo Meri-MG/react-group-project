@@ -27,7 +27,7 @@ small {
 }
 
 .member {
-  background-color: rgb(13, 218, 13);
+  background-color: rgb(26, 166, 190);
   border-radius: 10px;
   padding: 0.5rem;
   color: white;
@@ -40,6 +40,15 @@ small {
   background-color: white;
   border-style: solid;
   border-color: rgb(221, 17, 17);
+}
+
+.leave {
+  border-radius: 10px;
+  padding: 0.5rem 1.4rem;
+  color: black;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(92, 221, 17);
 }
 
 .fourth-col {

@@ -4,9 +4,9 @@ import { Provider } from 'react-redux';
 import * as ReactRedux from 'react-redux';
 import userEvent from '@testing-library/user-event';
 import { render, screen } from '@testing-library/react';
-import store from '../redux/configureStore';
-import Rockets from '../components/Rockets/Rockets';
-import ReserveBtn from '../components/Rockets/ReserveBtn';
+import store from '../../redux/configureStore';
+import Rockets from '../Rockets/Rockets';
+import ReserveBtn from '../Rockets/ReserveBtn';
 
 // useDispatch returns a function which we are mocking here
 const mockDispatch = jest.fn();
