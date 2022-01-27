@@ -1,6 +1,5 @@
 .miss-table {
   font-family: 'Merriweather', serif;
-  width: 95%;
   margin: 2rem auto;
 }
 
@@ -18,14 +17,13 @@ small {
 
 .second-col {
   padding: 2rem 1rem;
-  font-size: 20px;
   text-align: left;
   line-height: 2;
 }
 
 .third-col {
   text-align: center;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 .member {
@@ -57,4 +55,9 @@ tr {
 
 tr:nth-child(even) {
   background: rgb(219, 216, 216);
+}
+
+.missions {
+  width: 80%;
+  margin: 0 auto;
 }
