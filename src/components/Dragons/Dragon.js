@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import store from '../../redux/configureStore';
+import Reserve from './Reserve';
 import classes from './Dragons.module.css';
 import { reserveDragon } from '../../redux/dragons/dragons';
 
@@ -31,7 +32,7 @@ function Dragon() {
             <span>
               {el.name}
             </span>
-            <span><button onClick={() => reserveHandler(el)} type="button">{el.reserved ? 'Cancel reservation' : 'Reserve dragon'}</button></span>
+            <span><Reserve reserveHandler={() => reserveHandler(el)} content={el.reserved ? 'Cancel reservation' : 'Reserve dragon'} /></span>
           </li>
         ))}
       </ul>
