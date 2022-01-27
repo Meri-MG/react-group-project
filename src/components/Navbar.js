@@ -8,7 +8,7 @@ const Navigation = () => (
     <div className="inner-nav-bar">
       <div className={classes.logo}>
         <img src={planet} alt="id" width="40px" height="40px" />
-        <h1>Space Traveler&#39;s Hub</h1>
+        <h1>Space Travelers&#39; Hub</h1>
       </div>
       <ul>
         <li>

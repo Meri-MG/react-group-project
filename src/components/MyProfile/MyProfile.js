@@ -9,9 +9,9 @@ const MyProfile = () => {
   const reservedRockets = data.filter((rocket) => rocket.reserve === true);
   const missionItems = missions.missions.filter((item) => item.join === true);
   return (
-    <div>
+    <div className={classes.wrapper}>
       <div className={classes.div}>
-        <h1>Rockets</h1>
+        <h2>Rockets</h2>
         <ul>
           {reservedRockets.length ? reservedRockets.map((rocket) => (
             <li key={rocket.id}>{rocket.rocket_name}</li>
@@ -19,7 +19,7 @@ const MyProfile = () => {
         </ul>
       </div>
       <div className={classes.div}>
-        <h1>Dragons</h1>
+        <h2>Dragons</h2>
         <ul>
           {reservedDragons.length ? reservedDragons.map((dragon) => (
             <li key={dragon.id}>{dragon.name}</li>
@@ -27,7 +27,7 @@ const MyProfile = () => {
         </ul>
       </div>
       <div className={classes.div}>
-        <h1>My Missions</h1>
+        <h2>My Missions</h2>
         <ul>
           {
             missionItems.length ? missionItems.map((mission) => (
