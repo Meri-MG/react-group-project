@@ -1,9 +1,9 @@
 # Space-Travelers-Hub
 - In this group task, we were working with the real live data from the SpaceX API. Our task was to build a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets, dragons and join selected space missions.
 
-![Rockets_Page](https://github.com/Meri-MG/react-group-project/development/src/rockets.png)
-![Dragons_Page](https://github.com/Meri-MG/react-group-project/development/src/dragons.png)
-![Missions_Page](https://github.com/Meri-MG/react-group-project/development/src/missions.png)
+![Rockets_Page](https://raw.githubusercontent.com/Meri-MG/react-group-project/tests/src/rockets.png)
+![Dragons_Page](https://raw.githubusercontent.com/Meri-MG/react-group-project/tests/src/dragons.png)
+![Missions_Page](https://raw.githubusercontent.com/Meri-MG/react-group-project/tests/src/missions.png)
 
 ## Built With
 
